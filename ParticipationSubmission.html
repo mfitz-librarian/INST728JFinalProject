@@ -10,31 +10,58 @@
     
     <body>
         <header>
-            <h1> Applications
-            <hr>
-            </h1>
+        <h1>Applications</h1>
+        <hr>
         </header>
-     <div class="navbar">
-            <a href="LandingPage.html">Welcome</a>
-            <a href="Gallery.html">Gallery</a>
-            <a href="FAQ.html">Questions and Answers</a>
-            <a href="ParticipationSubmission.html">Participate</a>
-           <a href="AboutUs.html">About the Project</a>
-    </div>
-        <p>Interested in applying for an open project? Submit your application here. It will be forwarded to the moderators of the project. </p>
-        
+            <br>
+    <nav>
+        <ul>
+            <li><a href="LandingPage.html">Welcome</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="FAQ.html">Questions and Answers</a></li>
+            <li><a href="ParticipationSubmission.html">Participate</a></li>
+            <li><a href="AboutUs.html">About the Project</a></li>
+        </ul>
+    </nav>
+        <hr>
+    <br>
+        <div class="narration">
+                <p>Interested in applying for an open project? <br>Submit your application here. <br>It will be forwarded to the moderators of the project. </p>
+        </div>
         <br>
         
-        <form action="" method="POST">
+            <form action="" method="POST">
             <div class="form">
                 <label for="name">Name:</label>
-                <input type="text" name="name"><br>
+                <input type="text" name="name" required><br>
             </div>
             
             <div class="form">
-                <label for "handle">Online Handle:</label>
+                <label for="handle">Online Handle:</label>
                 <input type="text" name="handle"><br>
+                <label for="url">On:</label>
+                <input type="url" name="platform"><br>
             </div>
+            
+            <div class="form">
+                <label for="email">E-Mail Address:</label>
+                <input type="email" name="email" required>
+            </div>
+            
+            <div class="form">
+                <label for="createJoin">I am...</label>
+                <select name="createJoin">
+                    <option value="Create">Creating a New Project"</option>
+                    <option value="Join">Joining an Existing Project"</option>
+                </select>
+            </div>
+            
+                <br>
+            <div class="submit">
+                <input type="submit" name="Submit">
+            </div>
+            
+            
         </form>
         
     </body>

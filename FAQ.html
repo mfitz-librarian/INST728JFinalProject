@@ -1,11 +1,82 @@
 <!doctype html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>FAQ</title>
         <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="Nexus.css">
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                      acc[i].addEventListener("click", function() {
+                              this.classList.toggle("active");
+
+                        var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                            }
+                        });
+                    }
+        </script>
+        
     </head>
     
+    <body>
+        
+       <header>
+        <h1>Publisher's Nexus</h1>
+        <hr>
+        </header>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="LandingPage.html">Welcome</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="FAQ.html">Questions and Answers</a></li>
+            <li><a href="ParticipationSubmission.html">Participate</a></li>
+            <li><a href="AboutUs.html">About the Project</a></li>
+        </ul>
+    </nav>
+        
+     <div class="narration">
+         <button class="accordion">How do I start my own project?</button>
+                <div class="panel">
+                    Sign up with our coordinators by submitting an application and selecting the New Project option!
+                </div>
+            <br>
+            <br>
+            
+            
+        <button class="accordion">How do I find collaborators?</button>
+                <div class="panel">
+                    You can use any existing social media platform to advertise your project. We suggest putting out an interest survey to scout potential collaborators before committing to a new project.
+                </div>
+            <br>
+            <br>
+            
+         <button class="accordion"> How do I join an existing project?</button>
+                <div class="panel">
+                    Each project is given a codename. Get the codename from your coordinator and sign up under that project to access its exclusive resources.
+                </div>
+            <br>
+            <br>
+            
+         <button class="accordion">What's the difference between Publisher's Nexus and other publishing platforms?</button>
+                <div class="panel">
+                    Publisher's Nexus is a planning and coordination tool meant to be a resource for self-publishers to be able to hit the ground running on their projects. It's non-profit and completely without ads. It is not meant to host finished products or help distribute them, only find ways for potential publishers to do so.
+                </div>
+            <br>
+            <br>
+        </div>
+        
+        <footer>
+            <p>Publisher's Nexus is a student project and not a live website service. Please do not enter any personal information at this time.</p>
+        </footer>
+        
+    </body>
 </html>
