@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: dimgrey;
     color: antiquewhite;
@@ -20,7 +24,7 @@ header {
 nav {
     font-family: 'Special Elite', cursive;
     font-size: 20px;
-    background-color:#00394d;;
+    background-color:#00394d;
     width: 100%;
     border: none;
 }
@@ -56,15 +60,41 @@ nav a:active{
 
 /*Text*/
 
-.narration {
+.narrationLeft {
     display: inline-block;
     margin-top:10px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 5%;
+    width: 35%;
     background-color: #0086b3;
     font-family: 'Special Elite', cursive;
     line-height: 1.5em;
-    padding:20px;    
+    padding:20px;
+    float: left;
+}
+
+.narrationRight {
+    display: inline-block;
+    margin-top:10px;
+    margin-right: 5%;
+    width: 35%;
+    background-color: #0086b3;
+    font-family: 'Special Elite', cursive;
+    line-height: 1.5em;
+    text-align:right;
+    padding:20px;
+    float: right;
+}
+
+.narrationCenter{
+    display:inline-block;
+    margin-top:10px;
+    margin-left:35%;
+    margin-right:35%;
+    background-color: #0086b3;
+    text-align:center;
+    font-family: 'Special Elite', cursive;
+    line-height: 1.5em;
+    padding: 20px;
 }
 
 footer {
@@ -77,12 +107,35 @@ footer {
     padding: 5px;
 }
 
+.attribution {
+    font-size: smaller;
+    font-family: sans-serif;
+    text-align: right;
+    color: antiquewhite;
+    margin-top:0px;
+    }
+
+/*LandingPage*/
+
+#landingImageRight {
+    margin-right: 25%;
+    margin-top: 10px;
+    text-align: right;
+}
+
+#landingImageLeft {
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align:left;
+}
+
 /*Participation*/
 
 .form {
     font-weight: bold; 
     margin-left:15%;
     padding: 5px;
+    width: 50%;
     }
 
 label {
@@ -91,6 +144,13 @@ label {
     margin-right: 40px;
     text-align: right;
     
+}
+
+#return {
+    background-color: #6699cc;
+    text-align: center;
+    padding: 10px;
+    margin:5%;
 }
 
 .submit {
@@ -140,4 +200,43 @@ label {
     text-align: center;
     margin: 25px;
     padding: 10px; 
+}
+
+/*Gallery*/
+
+caption { font-family:'Special Elite', Serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+table {
+    margin-left:33%;
+    margin-right:25%;
+    border:thin solid antiquewhite; 
+    border-collapse:collapse;
+    padding: 10px;
+}
+
+th, td {
+    border: thin solid antiquewhite;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+th {
+    font-family:'Special Elite', serif;
+    font-weight:bold;
+    font-size: 1.2em;
+    background-color: #00bfff;
+}
+
+.cellcolor {
+    background-color: #007399;
+}
+
+
+.cellcolor2 {
+    background-color:#0099cc;
 }
