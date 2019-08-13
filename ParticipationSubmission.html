@@ -31,9 +31,15 @@
         </div>
         <br>
         <br>
+        
+        <div class="submissionBox">
+            <div class="formInstructions">
+            <p>Fields marked with an (*) asterisk are required.</p>
+            </div>
+            
             <form action="#" method="POST">
             <div class="form">
-                <label for="name">Name:</label>
+                <label for="name">Name:*</label>
                 <input type="text" name="name" required><br>
             </div>
             
@@ -45,25 +51,53 @@
             </div>
             
             <div class="form">
-                <label for="email">E-Mail Address:</label>
+                <label for="email">E-Mail Address:*</label>
                 <input type="email" name="email" required>
             </div>
             
             <div class="form">
                 <label for="createJoin">I am...</label>
                 <select name="createJoin">
-                    <option value="Create">Creating a New Project"</option>
-                    <option value="Join">Joining an Existing Project"</option>
+                    <option value="Create">Creating a New Project</option>
+                    <option value="Join">Joining an Existing Project</option>
                 </select>
+            </div>
+                <hr>
+                <div class="formInstructions">
+                <p>To join an existing project, please enter your Project Code here:</p>
+                </div>
+            <div class="form">
+                <label for="projectCode">Project Code:</label>
+                <input type="text" name="projectCode">
             </div>
             
                 <br>
+                <hr>
+            <div class="formInstructions">
+                <p>Please indicate the roles you are capable of filling in a project:<br>(Check all that apply)</p>   
+                <br>
+                
+                <input type="checkbox" name="roles[]" value="artist">Artist<br>
+                <input type="checkbox" name="roles[]" value="writer">Writer<br>
+                <input type="checkbox" name="roles[]" value="editor">Editor<br>
+                <input type="checkbox" name="roles[]" value="moderator">Moderator<br>
+                <input type="checkbox" name="roles[]" value="merchandize">Merchandizer<br>
+                <input type="checkbox" name="roles[]" value="other">Other:
+                <input type="text" name="other">
+              </div>   
+                
+            <hr>    
+                
             <div class="submit">
                 <input type="submit" name="Submit">
             </div>
             
-            
-        </form>
+            </form>
+        </div>
+        
+          <footer>
+            <p>Publisher's Nexus is a student project and not a live website service. Please do not enter any personal information at this time.</p>
+        </footer>
         
     </body>
 </html>

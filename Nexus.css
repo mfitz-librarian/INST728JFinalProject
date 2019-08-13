@@ -3,7 +3,9 @@
 }
 
 body{
-    background-color: dimgrey;
+    background-image:url(Images/BlueInk.jpg);
+    background-position: center;
+    background-size:cover;
     color: antiquewhite;
 }
 
@@ -21,6 +23,8 @@ header {
     clear:both;}
 
 /*Menu*/
+
+
 nav {
     font-family: 'Special Elite', cursive;
     font-size: 20px;
@@ -58,12 +62,18 @@ nav a:active{
     color: #e6f2ff;
 }
 
+a {
+   text-decoration:none;
+}
+
+
 /*Text*/
 
 .narrationLeft {
     display: inline-block;
     margin-top:10px;
     margin-left: 5%;
+    margin-right: 5%;
     width: 35%;
     background-color: #0086b3;
     font-family: 'Special Elite', cursive;
@@ -76,6 +86,7 @@ nav a:active{
     display: inline-block;
     margin-top:10px;
     margin-right: 5%;
+    margin-left: 5%;
     width: 35%;
     background-color: #0086b3;
     font-family: 'Special Elite', cursive;
@@ -107,13 +118,33 @@ footer {
     padding: 5px;
 }
 
-.attribution {
-    font-size: smaller;
+.attributionRight {
+    font-size: .7em;
     font-family: sans-serif;
     text-align: right;
     color: antiquewhite;
     margin-top:0px;
+    text-decoration:none;
     }
+
+.attributionLeft {
+    font-size: .7em;
+    font-family: sans-serif;
+    text-align: left;
+    color: antiquewhite;
+    margin-top:0px;
+    text-decoration:none;
+    }
+
+.attributionCenter {
+    font-size: .7em;
+    font-family: sans-serif;
+    text-align: center;
+    color: antiquewhite;
+    margin-top:0px;
+    text-decoration:none;
+    }
+}
 
 /*LandingPage*/
 
@@ -131,11 +162,20 @@ footer {
 
 /*Participation*/
 
+.submissionBox {
+    background-color: #0086b3;
+    border-style:groove;
+    border-color: antiquewhite;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding:15px;
+}
+
 .form {
     font-weight: bold; 
     margin-left:15%;
-    padding: 5px;
-    width: 50%;
+    padding: 15px;
+    width: 66%;
     }
 
 label {
@@ -143,7 +183,6 @@ label {
     width: 20%;
     margin-right: 40px;
     text-align: right;
-    
 }
 
 #return {
@@ -157,7 +196,28 @@ label {
     margin-left: 40%;
 }
 
+.formInstructions {
+    margin-left:20%;
+    margin-right:20%;
+    padding:10px;
+}
+
 /*FAQ*/
+
+.faqAccordion { 
+    display: inline-block;
+    margin-top:10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    width: 90%;
+    background-image: url(Images/BlueInk.jpg);
+    font-family: 'Special Elite', cursive;
+    line-height: 1.5em;
+    padding:20px;
+    float: left;
+    
+}
 
 .accordion {
     font-family: 'Special Elite', cursive;
@@ -175,13 +235,13 @@ label {
     transition: 0.5s;   
 }
 
-.accordion:hover{
+.active, .accordion:hover{
     background-color: #0099cc;
 }
 
 .panel {
     font-family: sans-serif; 
-    padding: 15px; 
+    padding:15px; 
     background-color: #0099cc;
     display: none;
     overflow: hidden;
@@ -202,6 +262,10 @@ label {
     padding: 10px; 
 }
 
+.stepImageLeft {
+    display:inline-grid;
+    float:left;
+}
 /*Gallery*/
 
 caption { font-family:'Special Elite', Serif;
@@ -212,11 +276,12 @@ caption { font-family:'Special Elite', Serif;
 }
 
 table {
-    margin-left:33%;
+    margin-left:25%;
     margin-right:25%;
     border:thin solid antiquewhite; 
     border-collapse:collapse;
     padding: 10px;
+    float: none;
 }
 
 th, td {
@@ -239,4 +304,41 @@ th {
 
 .cellcolor2 {
     background-color:#0099cc;
+}
+
+.illustrationCenter {
+    margin-left:33%;
+    margin-right:33%;
+}
+
+.illustrationLeft {
+    margin-left:10%;
+    margin-right:66%;
+}
+
+.illustrationRight {
+    margin-left:66%;
+    margin-right:10%
+    float:right;
+}
+
+.inverse {
+    color:black;
+}
+/*About*/
+
+.ProfilePic {
+    display: inline-block;
+    float:left;
+}
+
+aside {
+    background-color: #0099cc;
+    font-family: serif;
+    line-height:1.3em;
+    text-align:justify;
+    padding:15px;
+    width: 20%;
+    margin: 20px;
+    float:left;
 }

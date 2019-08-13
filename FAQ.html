@@ -6,24 +6,7 @@
         <title>FAQ</title>
         <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="Nexus.css">
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-                var i;
-
-                for (i = 0; i < acc.length; i++) {
-                      acc[i].addEventListener("click", function() {
-                              this.classList.toggle("active");
-
-                        var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                    } else {
-                    panel.style.display = "block";
-                            }
-                        });
-                    }
-        </script>
-        
+    
     </head>
     
     <body>
@@ -45,7 +28,7 @@
     </nav>
         <hr>
         
-     <div class="narrationLeft">
+     <div class="faqAccordion">
          <button class="accordion">How do I start my own project?</button>
                 <div class="panel">
                     Sign up with our coordinators by submitting an application and selecting the New Project option!
@@ -56,22 +39,48 @@
             
         <button class="accordion">How do I find collaborators?</button>
                 <div class="panel">
-                    You can use any existing social media platform to advertise your project. We suggest putting out an interest survey to scout potential collaborators before committing to a new project.
+                    <p>You can use any existing social media platform to advertise your project. We suggest putting out an interest survey to scout potential collaborators before committing to a new project.</p>
                 </div>
             <br>
             <br>
             
          <button class="accordion"> How do I join an existing project?</button>
                 <div class="panel">
-                    Each project is given a codename. Get the codename from your coordinator and sign up under that project to access its exclusive resources.
+                    <p>Each project is given a codename. Get the codename from your coordinator and sign up under that project to access its exclusive resources.</p>
                 </div>
             <br>
             <br>
             
          <button class="accordion">What's the difference between Publisher's Nexus and other publishing platforms?</button>
                 <div class="panel">
-                    Publisher's Nexus is a planning and coordination tool meant to be a resource for self-publishers to be able to hit the ground running on their projects. It's non-profit and completely without ads. It is not meant to host finished products or help distribute them, only find ways for potential publishers to do so.
+                    <p>Publisher's Nexus is a planning and coordination tool meant to be a resource for self-publishers to be able to hit the ground running on their projects. It's non-profit and completely without ads. It is not meant to host finished products or help distribute them, only find ways for potential publishers to do so.</p>
                 </div>
+         
+         <br>
+         <br>
+         
+         <button class="accordion">What is this website's cool background?</button>
+            <div class="panel">
+            <p> "Blue Ink" by Dave Croker. (click image to link)<br><a title="Dave Croker [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Blue_ink.jpg"><img width="512" alt="Blue ink" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Blue_ink.jpg/512px-Blue_ink.jpg"></a></p></div>
+         
+         <script>
+            var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                      acc[i].addEventListener("click", function() {
+                              this.classList.toggle("active");
+
+                        var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                            }
+                        });
+                    }
+        </script>
+        
             <br>
             <br>
         </div>
